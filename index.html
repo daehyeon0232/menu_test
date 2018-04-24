@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>맥도날드 menu_test</title>
+	<style>
+		*{margin: auto;}
+		
+		a:link, a:active, a:visited, a:hover{text-decoration: none;}
+		a:link, a:active, a:visited{color: white;}
+		a:hover{color: black;}
+
+		#menu{width: 160px; height: 670px; background: red; float: left;}
+		#title{width: 160px; height: 170px; background: red; text-align: center;  color: white;}
+	 	#title img{width: 100px; line-height: 200px; padding: 1.2em 1.0em 0.5em 1.0em;}
+
+	 	#list_bar{padding: 0px;}	 	
+	 	#list{background: red; width: 160px; height:50px; line-height: 50px; list-style: none; text-align: center; color:white; transition: all 1s;}
+	 	#list:hover {background: yellow; color: black; font-size: 1.2em;}
+	 	#box{position: relative; padding: 1em 0em; width: 160px; float: left; color: white;}
+	 	#box p{font-size: 0.8em}
+	 	#fb_p{position: absolute; top: 20px; left: 55px;}
+	 	#fb{position:absolute; top:20px; left: 15px; width: 30px;}
+	 	#call_p{position: absolute; top: 63px; left: 55px;}
+	 	#call{position:absolute; top:60px; left: 20px; width: 20px;}
+
+	 	#back{width: 1000px; height: 670px; margin: auto;}
+
+	 	#news_box{position: relative; top: 20px; width: 600px; height: 370px;   float: left; padding: 0em;}
+	 	#news{position: absolute; width: 580px; height: 50px; padding: 0em 10px; color: white; background: red;}
+	 	#soft{position: relative; top:50px; width: 580px;}
+
+	 	#back h2{position: absolute; width: 200px;}
+	 	#img_box{width: 1100px; padding: 10px; }
+	 	#img_box img{width: 470px; float: right; margin:10px;}
+	</style>
+</head>
+<body>
+
+	
+	<nav id="menu">
+		<a href="http://www.mcdonalds.co.kr/www/kor/main/main.do">
+		<div id="title">
+			<img src="./img/logo.png">
+			<h2>I'm lovin it</h2>
+		</a>
+		</div>
+		
+		<ul id="list_bar">
+			<a href="http://www.mcdonalds.co.kr/www/kor/menu/menu_list.do?cate_cd=100">
+				<li id="list">Burgers
+				</li>
+			</a>
+			<a href="http://www.mcdonalds.co.kr/www/kor/menu/menu_list.do?cate_cd=110">
+				<li id="list">Set
+				</li>
+			</a>
+			<a href="http://www.mcdonalds.co.kr/www/kor/menu/menu_list.do?cate_cd=160">
+				<li id="list">Desserts
+				</li>
+			</a>
+			<a href="http://www.mcdonalds.co.kr/www/kor/menu/menu_list.do?cate_cd=170">
+				<li id="list">Beverages
+				</li>
+			</a>
+			<a href="http://www.mcdonalds.co.kr/www/kor/findus/delivery.do">
+				<li id="list">Mac Delivery
+				</li>
+			</a>
+			<a href="http://www.mcdonalds.co.kr/www/kor/findus/thru.do">
+				<li id="list">Mac Drive
+				</li>
+			</a>
+			<a href="http://www.mcdonalds.co.kr/www/kor/story/history.do">
+				<li id="list">Mac Story
+				</li>
+			</a>
+			<a href="http://www.mcdonalds.co.kr/www/kor/board/view.do?board_seq=550">
+			<li id="list">Event
+			</li>
+			</a>
+		</ul>
+		<div id="box">
+			<img src="./img/facebook.png" id="fb">
+			<p id="fb_p">http:://facebook.<br>Macdonald</p>
+			<img src="./img/call.png" id="call">
+			<p id="call_p">080-208-1588</p>
+		</div>
+	</nav>
+
+	<div id="back">
+		<a href="http://www.mcdonalds.co.kr/www/kor/event/event_view.do?event_seq=175">
+		<div id="news_box">
+			<h1 id="news">News</h1>
+			<img src="./img/soft.jpg" id="soft">
+		</div>
+		</a>
+		<div id="img_box">
+			<img src="./img/1.jpg">
+			<img src="./img/2.jpg">
+		</div>
+	</div>
+
+</body>
+</html>
